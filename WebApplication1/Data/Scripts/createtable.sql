@@ -1,8 +1,6 @@
 CREATE TABLE IF NOT EXISTS `shorturldb`.`Urls` (
   `IdShortUrl` VARCHAR(8) NOT NULL,
   `FullUrl` VARCHAR(2000) NOT NULL,
-  `DateCreate` DATETIME NULL,
-  `Count` INT UNSIGNED NULL,
-  PRIMARY KEY (`IdShortUrl`),
-  UNIQUE INDEX `IdUrl_UNIQUE` (`IdShortUrl` ASC) VISIBLE)
-ENGINE = InnoDB
+  `DateCreate` DATETIME,
+  `Count` INT,
+  PRIMARY KEY (`IdShortUrl`));
